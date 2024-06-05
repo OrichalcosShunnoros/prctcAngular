@@ -6,6 +6,9 @@ import { Component, OnInit } from '@angular/core';
     styleUrl: './card-product.component.scss'
 })
 export class CardProductComponent implements OnInit {
+
+    cantidad: number = 0;
+
     product = {
         name: 'Bike',
         price: 120,
@@ -14,7 +17,13 @@ export class CardProductComponent implements OnInit {
 
     constructor(){}
     
-    ngOnInit(){
-        
+    ngOnInit(){}
+
+    addProduct(){
+        this.cantidad++;
+    }
+
+    removeProduct(){
+        this.cantidad--;
     }
 }
