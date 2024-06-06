@@ -2,19 +2,19 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
-import { AppComponent } from './app.component';
+import { CatalogoComponent } from './components/catalogo/catalogo.component';
 import { CardProductComponent } from './components/card-product/card-product.component';
 
 @NgModule({
   declarations: [
-    AppComponent,
-    CardProductComponent
+    CatalogoComponent,
+    CardProductComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [CatalogoComponent]
 })
 export class AppModule { }
